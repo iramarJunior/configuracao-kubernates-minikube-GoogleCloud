@@ -8,7 +8,9 @@
 
 - Acessar e ativar a API do Kubernetes Engine.
 
-- gcloud components install kubectl
+- Clicar no Web Console:
+
+![console](https://github.com/iramarJunior/configuracao-kubernates-minikube-GoogleCloud/blob/master/img/start_interactive_cli.png)
 
 ## Configuração do Helm
 
