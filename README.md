@@ -12,6 +12,37 @@
 
 ![console](https://github.com/iramarJunior/configuracao-kubernates-minikube-GoogleCloud/blob/master/img/start_interactive_cli.png)
 
+- Instalar o kubectl:
+
+```
+$ gcloud components install kubectl
+```
+
+- Criar um cluster Kubernetes gerenciado e um conjunto de nós padrão:
+
+```
+$ gcloud container clusters create \
+  --machine-type n1-standard-2 \
+  --num-nodes 2 \
+  --zone us-central1-a \
+  --cluster-version latest \
+  kubecluster
+```
+
+- Testar a Inicialização do Cluster:
+
+```
+$ kubectl get node
+```
+
+- Conceder à sua conta permissões para executar todas as ações administrativas necessárias:
+
+```
+kubectl create clusterrolebinding cluster-admin-binding \
+  --clusterrole=cluster-admin \
+  --user=<DIGITE AQUI SEU EMAIL DO GOOGLE CLOUD>
+```
+
 ## Configuração do Helm
 
 ---
