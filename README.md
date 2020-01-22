@@ -38,7 +38,7 @@ $ kubectl get node
 - Conceder à sua conta permissões para executar todas as ações administrativas necessárias:
 
 ```
-kubectl create clusterrolebinding cluster-admin-binding \
+$ kubectl create clusterrolebinding cluster-admin-binding \
   --clusterrole=cluster-admin \
   --user=<DIGITE AQUI SEU EMAIL DO GOOGLE CLOUD>
 ```
